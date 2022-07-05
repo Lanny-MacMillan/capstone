@@ -1,0 +1,183 @@
+body {
+  background: rgb(190, 190, 190);
+}
+h1 {
+  text-align: center;
+}
+h3 {
+  margin: 0;
+}
+#textColor {
+  color:rgb(125, 7, 30)
+}
+#title {
+  text-align: center;
+}
+.showHeader {
+  text-align: center;
+}
+.iFrame {
+  width: 98%;
+  height: 100%;
+  /* position: absolute; */
+}
+iframe {
+  position: relative;
+  height: calc(100vh - 20px);
+  width: calc(100vw - 40px);
+
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.localMapContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+.localContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-shadow: 5px 5px 5px 5px rgb(28, 29, 48);
+  margin: 15px;
+  align-items: center;
+}
+.Card {
+  align-items: center;
+}
+#newsCard {
+  width: 700px
+}
+.translate {
+  flex-grow:inherit;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.event {
+  flex-grow:inherit;
+  text-align: center;
+  /* background: rgb(140, 226, 125); */
+  box-shadow: 5px 5px 5px 5px rgb(28, 29, 48);
+  width: 300px;
+  height: 450px;
+  /* border-radius: 35px; */
+  margin-bottom: 15px;
+}
+#eventImg {
+  width: 100%;
+  max-width: 320px;
+}
+#Button {
+  margin: 5px;
+}
+Switch {
+  size: 55px;
+}
+
+/* ====================== SHOW PAGE ======================== */
+
+.showContainer {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr 0fr 0.9fr 1.8fr 1.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "showImg showImg description description description"
+    "showImg showImg description description description"
+    "showImg showImg . . ."
+    "showImg showImg mapsApi mapsApi mapsApi"
+    "stats stats mapsApi mapsApi mapsApi"
+    "stats stats mapsApi mapsApi mapsApi";
+}
+#showCommonName {
+  text-align: center;
+  font-size: 3em;
+  background-color: white;
+}
+#showBtn:hover {
+  background-color:white;
+  color:black;
+}
+.showImg {
+  grid-area: showImg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+
+.description {
+  grid-area: description;
+  padding: 10px;
+  padding-top: 0;
+  background: rgb(33, 33, 33);
+  color: white;
+}
+
+.stats {
+  grid-area: stats;
+  padding: 10px;
+  text-align: center;
+}
+
+.mapsApi {
+  grid-area: mapsApi;
+}
+.maps {
+  min-width: 80%;
+  min-height: 80%;
+  width: 80%;
+  max-width: 320px;
+}
+#showImg {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  max-width: 320px;
+}
+.stats {
+  background: rgb(229, 227, 227);
+  color: black;
+}
+/* ====================== SHOW PAGE NEW ======================== */
+
+/* .container {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "eventInfo"
+    "eventImg"
+    "eventImg"
+    "eventDescription"
+    "eventNotes"
+    "mapsApi"
+    "mapsApi"
+    "mapsApi"
+    "buttons";
+}
+
+.eventInfo { grid-area: eventInfo; }
+
+.eventImg { grid-area: eventImg; }
+
+.eventDescription { grid-area: eventDescription; }
+
+.eventNotes { grid-area: eventNotes; }
+
+.mapsApi { grid-area: mapsApi; }
+
+.buttons { grid-area: buttons; } */
