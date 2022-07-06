@@ -95,7 +95,7 @@ const LocalInfo = (props) => {
             <div className='localMapContainer'>
             {newsResults.map((article) => {
             return(
-                <Card sx={{ maxWidth: 550, m:4 }} key={article._id}>
+                <Card sx={{ maxWidth: 400, m:4 }} key={article._id}>
                 <CardMedia
                     component="img"
                     height="240"
@@ -152,7 +152,7 @@ const LocalInfo = (props) => {
                 </CardContent>
                 <CardActions>
                     <Button onClick={() => {backOption()}}size="small">Back</Button>
-                    <Button size="small">Share</Button>
+                    {/* <Button size="small">Share</Button> */}
 
                 </CardActions>
                 <div className="modal-dialog">
@@ -183,16 +183,7 @@ const LocalInfo = (props) => {
         </>
         )
     }
-    // const embedNews = () => {
-    //     return (
-    //         <>
-    //         <div class="row">
-    //             <iframe class="col-lg-12 col-md-12 col-8" src={article.link}>
-    //             </iframe>
-    //         </div>
-    //         </>
-    //     )
-    // }
+
     const backOption = () => {
         setShowNews(true)
         setShowArticle(false)
@@ -212,8 +203,10 @@ const LocalInfo = (props) => {
 
     return (
         <>
-        <h1>Local News</h1>
-        <div className='container'>
+        <div className='containerAdd'>
+        <h1 id='newsTitle'>Local News</h1>
+        </div>
+        <div className='containerAdd'>
         <Box
         sx={{
             display: 'flex',

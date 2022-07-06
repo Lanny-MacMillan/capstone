@@ -18,7 +18,7 @@ const Pricing = () => {
     
     return (
         <>
-        Currency Page
+        <h1>Currency Exchange Function coming 2022!</h1>
         </>
     )
 }

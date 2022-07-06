@@ -36,10 +36,11 @@ const Add = (props) => {
         
 
     <Typography variant="h4">Add New Event</Typography>
-    <div className="container">
+    <div className="containerAdd">
     <form>
         <TextField
             style={{ width: "400px", margin: "5px", align: 'center'}}
+            className='addTitle'
             type="text"
             label="Name"
             variant="outlined"
