@@ -1,5 +1,5 @@
 import './App.css';
-import {React, useState, useEffect} from'react'
+import {useState, useEffect} from'react'
 import axios from 'axios'
 import Add from './components/Add'
 import Home from './components/Home'
@@ -14,8 +14,6 @@ import * as React from 'react';
 import { Route, Routes} from "react-router";
 import ResponsiveAppBar from './components/NavBar';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { Switch } from "antd";
-import ReactSwitch from 'react-switch'
 
 
 function App(props) {
