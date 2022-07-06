@@ -2,7 +2,7 @@ import {useState,useEffect} from 'react';
 import axios from 'axios';
 import '../App.css';
 import Button from '@mui/material/Button';
-// import { useSpeechSynthesis } from 'react-speech-kit';
+import { useSpeechSynthesis } from 'react-speech-kit';
 
 
 
@@ -14,7 +14,7 @@ function Translate() {
     const [output, setOutput]=useState("");
 
     //=============== TEXT TO SPEECH ============================
-    // const { speak } = useSpeechSynthesis();
+    const { speak } = useSpeechSynthesis();
 
     const translate=()=>{
         const params=new URLSearchParams();
@@ -42,36 +42,32 @@ function Translate() {
     return (
         <>
         <div className='container'>
-        <h2>Translator will yield the best results with short, direct sentences.</h2>
+        <h1 id='title'>Translator</h1>
+            <h4 id='translator'>Translator will yield the best results with short, direct sentences.</h4>
         </div>
         <div className="translate">
         <div>
-        From ({from}):
-        <select onChange={e=>setFrom(e.target.value)}>
-        {options.map(opt=><option key={opt.code} value={opt.code}>{opt.name}</option>)}
-        
-        </select>
-        To({to}):
-        <select onChange={e=>setTo(e.target.value)}>
-        {options.map(opt=><option key={opt.code} value={opt.code}>{opt.name}</option>)}
-        
-        </select>
+            From ({from}):
+            <select onChange={e=>setFrom(e.target.value)}>
+            {options.map(opt=><option key={opt.code} value={opt.code}>{opt.name}</option>)}
+            </select>
+            To({to}):
+            <select onChange={e=>setTo(e.target.value)}>
+            {options.map(opt=><option key={opt.code} value={opt.code}>{opt.name}</option>)}
+            </select>
         </div>
         <br/>
         <div>
-        <textarea cols='50' rows='8' onInput={(e)=>setInput(e.target.value)}></textarea>
+            <textarea cols='50' rows='8' onInput={(e)=>setInput(e.target.value)}></textarea>
+        </div>
+            <br/>
+        <div>
+            <textarea cols='50' rows='8' value={output}></textarea>
         </div>
         <br/>
         <div>
-        <textarea cols='50' rows='8' value={output}
-
-        ></textarea>
-        
-        </div>
-        <br/>
-        <div>
-        <Button variant="contained" onClick={e=>translate()}>Translate</Button>
-        {/* <Button variant="contained"  onClick={() => speak({ text: output })}>Speech</Button> */}
+            <Button variant="contained" onClick={e=>translate()}>Translate</Button>
+            <Button variant="contained"  onClick={() => speak({ text: output })}>Speech</Button>
         </div>
 
         </div>

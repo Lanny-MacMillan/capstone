@@ -80,6 +80,7 @@ const Dashboard = (props) => {
             })
             .then((response) => {
                 if (response == undefined){
+                    alert("No user match, please create an account or try again.")
                     console.log("undefined - no match")
                     console.log(response)
                     setUserLogIn(false)
@@ -145,12 +146,13 @@ const Dashboard = (props) => {
         <>    
         {userLogIn ? <Home/> : 
         <>
-        <Typography variant="h4">Login</Typography>
-            <div className="container">
+        <h1 id='title'>Login</h1>
 
-        <form>
+        <div className="container">
+
+        <form id='loginForm'>
             <TextField
-                style={{ width: "400px", margin: "5px", align: 'center'}}
+                style={{ width: "400px", margin: "5px"}}
                 type="text"
                 label="Email"
                 variant="outlined"
@@ -161,7 +163,7 @@ const Dashboard = (props) => {
             <br />
             <TextField
                 style={{ width: "400px", margin: "5px" }}
-                type="text"
+                type="password"
                 label="Password"
                 variant="outlined"
                 name="password" 

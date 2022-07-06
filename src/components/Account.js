@@ -15,7 +15,7 @@ const Account = (props) => {
 
     return (
         <>
-                    Profile Page
+        <h1 id='title'>Account</h1>
         <div className='container'>
             <Card className='Card' sx={{ maxWidth: 450, m: 1 }}>
                     <CardHeader

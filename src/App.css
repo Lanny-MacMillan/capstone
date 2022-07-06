@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 body {
   background: rgb(190, 190, 190);
 }
@@ -8,9 +9,26 @@ h3 {
   margin: 0;
 }
 #textColor {
-  color:rgb(125, 7, 30)
+  color:rgb(201, 66, 93);
+
 }
 #title {
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bolder;
+  font-size: 65px;
+}
+#title2 {
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bolder;
+  font-size: 65px;
+  color: white;
+}
+p { 
+  text-align: center;
+}
+form {
   text-align: center;
 }
 .containerAdd {
@@ -45,6 +63,17 @@ iframe {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+#loginForm {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+textarea {
+  color: white;
+  background-color: #272727;
+  box-shadow: 2px 2px 5px 2px rgb(28, 29, 48);
+
 }
 .localMapContainer{
   display: flex;
@@ -91,6 +120,17 @@ iframe {
 }
 #Button {
   margin: 5px;
+  align-self: center;
+}
+#learnMore {
+  justify-content: center;
+}
+#translator {
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bolder;
+}
+#loginForm {
+  background: #272727
 }
 Switch {
   size: 55px;

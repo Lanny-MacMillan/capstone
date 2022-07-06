@@ -34,8 +34,7 @@ const Add = (props) => {
     return (
         <>
         
-
-    <Typography variant="h4">Add New Event</Typography>
+        <h1 id='title'>Add New Event</h1>
     <div className="containerAdd">
     <form>
         <TextField
@@ -116,7 +115,7 @@ const Add = (props) => {
             onChange={handleChange}
         />
         <br />
-        <Button id='Button' onClick={handleSubmitExit} type="submit" variant="contained">Save and Exit</Button>
+        <Button id='Button' onClick={handleSubmitExit} type="submit" variant="outlined">Save and Exit</Button>
         <Button id='Button' onClick={handleSubmitAddMore} type="submit" variant="contained">Save and Add Next</Button>
 
     </form>

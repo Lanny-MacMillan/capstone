@@ -13,8 +13,9 @@ const Logout = () => {
     return (
         <>
     <div>
-      <button onClick={themeChange}>Change view</button>
-      {theme && <h2>Loading...</h2>}
+    <h1 id='title'>Logout Page</h1>
+      {/* <button onClick={themeChange}>Change view</button>
+      {theme && <h2>Loading...</h2>} */}
     </div>
 
 

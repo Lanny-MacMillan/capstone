@@ -15,7 +15,6 @@ import { Route, Routes} from "react-router";
 import ResponsiveAppBar from './components/NavBar';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-
 function App(props) {
   const [activities, setActivities] = useState([])
   const [activity, setActivity] = useState({})
@@ -26,7 +25,7 @@ function App(props) {
     setTheme((curr) => (curr === 'light' ? 'dark' : 'light'))
   }
   const themeChange = () => {
-    // 👇️ passed function to setState
+    // passed function to setState
     setTheme(current => !current);
   };
   const DarkTheme = createTheme({

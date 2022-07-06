@@ -58,7 +58,7 @@ const Home = (props) => {
                         <Skeleton animation="wave" height={10} width="40%" />
                     ) : (
                         <>
-                        {activity.date}
+                        Date of Visit: {activity.date}
                         </>
                     )
                     }
@@ -108,7 +108,7 @@ const Home = (props) => {
         <div className='container'>
             {activities.map((activity) => {
             return(
-                <Card sx={{ height: 1100, maxWidth: 900, m: 1 }}>
+                <Card sx={{ height: 1300, maxWidth: 900, m: 1 }}>
                 <CardHeader
                     title={
                     loading ? (
@@ -162,7 +162,7 @@ const Home = (props) => {
                         {activity.notes}
                         <br/>
                         <Edit handleUpdate={handleUpdate} activity={activity}/>
-                        <Button id='Button' type="button" variant="contained"  data-bs-toggle="modal" data-bs-target="#deleteModal">
+                        <Button id='Button' type="button" variant="outlined"  data-bs-toggle="modal" data-bs-target="#deleteModal">
                         Delete Activity
                         </Button>
                         <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -183,7 +183,8 @@ const Home = (props) => {
                     </div>
                 </div>
                 </div>
-                
+                <Button id='Button' type="button" variant="outlined" onClick={homePage}>Back</Button>
+
                         </>
                         
                         }
@@ -192,7 +193,7 @@ const Home = (props) => {
 
                 </CardContent>
                 {loading ? (
-                    <Skeleton sx={{ height: 590 }} animation="wave" variant="rectangular" />
+                    <Skeleton sx={{ height: 690 }} animation="wave" variant="rectangular" />
                 ) : (
                     <div className="mapsApi">
                     <h5 id='title'>{activity.location}</h5>
@@ -269,7 +270,7 @@ const Home = (props) => {
     }, [])
     return (
         <>
-        <h1>Vacation Events</h1>
+        <h1 id='title'>Vacation Events</h1>
         {showActivities ? <DisplayAll/> : null}
         {showActivity ? <DisplayOne/> : null}     
         

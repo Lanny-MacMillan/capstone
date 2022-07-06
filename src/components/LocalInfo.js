@@ -110,7 +110,7 @@ const LocalInfo = (props) => {
                     {/* {article.summary} */}
                     </Typography>
                 </CardContent>
-                <CardActions>
+                <CardActions id='learnMore'>
                     {/* <Button size="small">Share</Button> */}
                     <Button id='Button' variant="contained" onClick={() => {showPage(article)}} className="btn btn-link" role="button">Learn More</Button>
 
@@ -170,7 +170,6 @@ const LocalInfo = (props) => {
                                 </div>
                                 <div className="modal-footer">
                                     <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" className="btn btn-primary">Save changes</button>
                                 </div>
                             </div>
                         </div>
@@ -204,8 +203,9 @@ const LocalInfo = (props) => {
     return (
         <>
         <div className='containerAdd'>
-        <h1 id='newsTitle'>Local News</h1>
+        <h1 id='title2'>Local News</h1>
         </div>
+        {/* ================== MUI FUZZY SEARCH BAR ====================*/}
         <div className='containerAdd'>
         <Box
         sx={{

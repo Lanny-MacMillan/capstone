@@ -15,7 +15,7 @@ const Edit = (props) => {
     }
     return (
         <>
-        <Button id='Button' type="button" variant="contained" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <Button id='Button' type="button" variant="outlined" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Edit Activity
         </Button>
 
