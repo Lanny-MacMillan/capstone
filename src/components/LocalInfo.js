@@ -104,7 +104,8 @@ const LocalInfo = (props) => {
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                    {article.title}
+                    {article.title}<br/>
+                    <h6>{article.published_date}</h6>
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                     {/* {article.summary} */}
