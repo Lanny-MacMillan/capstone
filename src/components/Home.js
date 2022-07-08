@@ -108,7 +108,7 @@ const Home = (props) => {
         <div className='container'>
             {activities.map((activity) => {
             return(
-                <Card sx={{ height: 1300, maxWidth: 900, m: 1 }}>
+                <Card sx={{ height: 1800, maxWidth: 900, m: 1 }}>
                 <CardHeader
                     title={
                     loading ? (
