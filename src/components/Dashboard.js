@@ -147,10 +147,8 @@ const Dashboard = (props) => {
         {userLogIn ? <Home/> : 
         <>
         <h1 id='title'>Login</h1>
-
-        <div className="container">
-
-        <form id='loginForm'>
+            <div className="container">
+                <form id='loginForm'>
             <TextField
                 style={{ width: "400px", margin: "5px"}}
                 type="text"
@@ -175,7 +173,7 @@ const Dashboard = (props) => {
             <Button id='Button' onClick={handleSubmitLogin} type="submit" variant="contained">Login</Button>
 
 
-        </form>
+                </form>
             </div>
 
         </>

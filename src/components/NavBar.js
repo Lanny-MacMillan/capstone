@@ -15,8 +15,9 @@ import AdbIcon from '@mui/icons-material/Adb';
 import {Link} from 'react-router-dom';
 import FlightOutlinedIcon from '@mui/icons-material/FlightOutlined';
 
-const pages = ['Add', 'LocalInfo', 'Pricing', 'Translate'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['Home', 'Add', 'LocalInfo', 'Pricing', 'Translate'];
+// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['Logout'];
 
 const ResponsiveAppBar = (props) => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);

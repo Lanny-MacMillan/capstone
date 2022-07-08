@@ -2,7 +2,7 @@ import {useState,useEffect} from 'react';
 import axios from 'axios';
 import '../App.css';
 import Button from '@mui/material/Button';
-// import { useSpeechSynthesis } from 'react-speech-kit';
+import { useSpeechSynthesis } from 'react-speech-kit';
 
 
 
@@ -14,7 +14,7 @@ function Translate() {
     const [output, setOutput]=useState("");
 
     //=============== TEXT TO SPEECH ============================
-    // const { speak } = useSpeechSynthesis();
+    const { speak } = useSpeechSynthesis();
 
     const translate=()=>{
         const params=new URLSearchParams();
@@ -42,7 +42,10 @@ function Translate() {
     return (
         <>
         <div className='container'>
-        <h1 id='title'>Translator</h1>
+            <h1 id='title'>Translator</h1>
+        </div>
+        <div className='container'>
+        <br/>
             <h4 id='translator'>Translator will yield the best results with short, direct sentences.</h4>
         </div>
         <div className="translate">
@@ -67,7 +70,7 @@ function Translate() {
         <br/>
         <div>
             <Button variant="contained" onClick={e=>translate()}>Translate</Button>
-            {/* <Button variant="contained"  onClick={() => speak({ text: output })}>Speech</Button> */}
+            <Button variant="contained"  onClick={() => speak({ text: output })}>Speech</Button>
         </div>
 
         </div>

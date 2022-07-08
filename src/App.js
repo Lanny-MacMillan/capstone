@@ -103,7 +103,8 @@ function App(props) {
 
     <>
     <Routes>
-        <Route path='/' element={<Home 
+        <Route path='/' element={<Dashboard />} /> 
+        <Route path='Home' element={<Home 
                                   handleUpdate={handleUpdate}
                                   handleSubmit={handleSubmit}
                                   handleChange={handleChange}

@@ -25,6 +25,12 @@ h3 {
   font-size: 65px;
   color: white;
 }
+#titleSub {
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bolder;
+  /* font-size: 65px; */
+}
 p { 
   text-align: center;
 }
