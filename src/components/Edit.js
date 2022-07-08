@@ -30,6 +30,7 @@ const Edit = (props) => {
             <form>
         <TextField
             style={{ width: "400px", margin: "5px", align: 'center'}}
+            id='modalText'
             type="text"
             label="Name"
             variant="outlined"
@@ -40,6 +41,7 @@ const Edit = (props) => {
         <br />
         <TextField
             style={{ width: "400px", margin: "5px" }}
+            id='modalText'
             type="text"
             label="Date"
             variant="outlined"
@@ -50,7 +52,8 @@ const Edit = (props) => {
         <br />
         <TextField
             style={{ width: "400px", margin: "5px" }}
-            id="full-width-text-field"
+            id='modalText'
+            // id="full-width-text-field"
             multiline
             rows={5}
             maxRows={10}
@@ -64,6 +67,7 @@ const Edit = (props) => {
         <br />
         <TextField
             style={{ width: "400px", margin: "5px" }}
+            id='modalText'
             type="text"
             label="Image"
             variant="outlined"
@@ -74,6 +78,7 @@ const Edit = (props) => {
         <br />
         <TextField
             style={{ width: "400px", margin: "5px" }}
+            id='modalText'
             type="text"
             label="Location"
             variant="outlined"
@@ -84,6 +89,7 @@ const Edit = (props) => {
         <br />
         <TextField
             style={{ width: "400px", margin: "5px" }}
+            id='modalText'
             type="number"
             label="Price"
             variant="outlined"
@@ -94,6 +100,7 @@ const Edit = (props) => {
         <br />
         <TextField
             style={{ width: "400px", margin: "5px" }}
+            id='modalText'
             multiline
             rows={5}
             maxRows={10}

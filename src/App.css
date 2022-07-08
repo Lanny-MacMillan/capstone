@@ -10,8 +10,12 @@ h3 {
 }
 #textColor {
   color:rgb(201, 66, 93);
+}
+.modal-body, .modal-header, .modal-footer {
+  background-color: #272727 ;
 
 }
+
 #title {
   text-align: center;
   font-family: 'Shadows Into Light', cursive;
